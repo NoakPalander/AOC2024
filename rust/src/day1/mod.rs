@@ -4,9 +4,6 @@ use std::collections::HashMap;
 use std::fs;
 use std::str;
 
-pub const INPUT: &str = "src/day1/input.txt";
-pub const EXAMPLE: &str = "src/day1/example.txt";
-
 pub fn read_input(path: &str) -> (Vec<i32>, Vec<i32>) {
     let contents = fs::read_to_string(path).unwrap();
     contents
