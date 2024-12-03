@@ -1,0 +1,64 @@
+---
+Checks: 'clang-analyzer-*,
+         concurrency-*,
+         cppcoreguidelines-*,
+         misc-*,
+         performance-*,
+         portability-*,
+         readability-*,
+         bugprone-*,
+         modernize-*,
+         -cppcoreguidelines-pro-bounds-pointer-arithmetic,
+         -cppcoreguidelines-avoid-magic-numbers,
+         -cppcoreguidelines-pro-type-reinterpret-cast,
+         -cppcoreguidelines-non-private-member-variable-in-classes,
+         -misc-non-private-member-variables-in-classes,
+         -misc-include-cleaner,
+         -readability-uppercase-literal-suffix,
+         -readability-magic-numbers,
+         -readability-identifier-length,
+         -readability-else-after-return,
+         -bugprone-easily-swappable-parameters,
+         -modernize-use-trailing-return-type,
+         -modernize-return-braced-init-list,
+         -modernize-use-std-print,
+         -modernize-use-auto,
+         -modernize-macro-to-enum'
+
+CheckOptions:
+  - key: readability-identifier-naming.ClassCase
+    value: CamelCase
+  - key: readability-identifier-naming.FunctionCase
+    value: lower_case
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+  - key: readability-identifier-naming.ClassMemberCase
+    value: lower_case
+  - key: readability-identifier-naming.ConstantCase
+    value: lower_case
+  - key: readability-identifier-naming.StructCase
+    value: CamelCase
+  - key: readability-identifier-naming.EnumCase
+    value: CamelCase
+  - key: readability-identifier-naming.EnumConstantCase
+    value: CamelCase
+  - key: readability-identifier-naming.NamespaceCase
+    value: lower_case
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: CamelCase
+  - key: readability-identifier-naming.GlobalVariableCase
+    value: lower_case
+  - key: readability-identifier-naming.ParameterCase
+    value: lower_case
+  - key: readability-identifier-naming.TemplateParameterCase
+    value: CamelCase
+  - key: readability-identifier-naming.TypedefCase
+    value: aNy_CasE
+  - key: readability-identifier-naming.TypeAliasCase
+    value: aNy_CasE
+  - key: readability-identifier-naming.UnionCase
+    value: CamelCase
+  - key: readability-identifier-naming.MethodCase
+    value: lower_case
+
+WarningsAsErrors: '*'
