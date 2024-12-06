@@ -1,11 +1,10 @@
 #![allow(dead_code)]
 
-mod day4;
-use day4::{read_input, part_one, part_two};
+mod day6;
+use day6::{read_input, part_one};
 
 fn main() {
-    let data = read_input("src/day4/input.txt");
-
-    println!("Part one: {}", part_one(data.clone()));
-    println!("Part two: {}", part_two(data.clone()));
+    let (p, m) = read_input("src/day6/input.txt");
+    let steps = part_one(p, m);
+    println!("Steps: {steps}");
 }
