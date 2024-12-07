@@ -1,5 +1,6 @@
 use std::fs;
 
+#[derive(Debug)]
 enum Direction {
     Up,
     Down,
@@ -7,6 +8,7 @@ enum Direction {
     Right
 }
 
+#[derive(Debug)]
 pub struct Position {
     row: i32,
     col: i32,
@@ -84,11 +86,19 @@ pub fn part_one(mut pos: Position, mut matrix: Matrix) -> i32 {
                 *current = 'X';
                 steps += 1;
             }
+            print_matrix(&matrix);
 
             pos.row = next.0;
             pos.col = next.1;
         }
     }
 
+    print_matrix(&matrix);
     steps
+}
+
+fn print_matrix(matrix: &Matrix) {
+    matrix.iter().for_each(|row| {
+        println!("{}", row.iter().collect::<String>());
+    });
 }

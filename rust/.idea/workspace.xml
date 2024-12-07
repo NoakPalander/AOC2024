@@ -9,6 +9,9 @@
   <component name="ChangeListManager">
     <list default="true" id="95c194f1-d303-4257-b110-0a0ca7192fa6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day7/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/day7/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day7/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/day7/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +19,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:release" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -77,7 +80,7 @@
   </component>
   <component name="RunManager" selected="Cargo.Run rust">
     <configuration name="Run rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="buildProfileId" value="dev" />
+      <option name="buildProfileId" value="release" />
       <option name="command" value="run --package rust --bin rust" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
@@ -128,6 +131,12 @@
       <workItem from="1733157540163" duration="352000" />
       <workItem from="1733313874082" duration="7972000" />
       <workItem from="1733325996672" duration="144000" />
+      <workItem from="1733489821709" duration="223000" />
+      <workItem from="1733490051705" duration="836000" />
+      <workItem from="1733583243323" duration="10000" />
+      <workItem from="1733583261179" duration="9312000" />
+      <workItem from="1733594835107" duration="170000" />
+      <workItem from="1733599081918" duration="862000" />
     </task>
     <servers />
   </component>

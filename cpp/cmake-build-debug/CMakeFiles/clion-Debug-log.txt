@@ -1,0 +1,7 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/ninja -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G Ninja -S /home/vidar/Dev/AOC2024/cpp -B /home/vidar/Dev/AOC2024/cpp/cmake-build-debug
+CMake Error at CMakeLists.txt:14:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "-ggdb3".
+
+
+-- Configuring incomplete, errors occurred!
