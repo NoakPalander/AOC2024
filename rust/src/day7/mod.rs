@@ -29,12 +29,12 @@ fn eval(op: i32, x: i64, y: i64) -> i64 {
 }
 
 fn solve(op_count: i32, data: &Vec<(i64, Vec<i64>)>) -> i64 {
-    data.iter().fold(0, |sum, (target, operands)| {
+    data.iter().fold(0, |sum, &(target, ref operands)| {
         let valid = (0..operands.len() - 1)
             .map(|_| 0..op_count)
             .multi_cartesian_product()
             .any(|combination| {
-                *target == combination
+                target == combination
                     .iter()
                     .zip(operands[1..].iter())
                     .fold(operands[0], |acc, (&op, &num)|{
@@ -43,14 +43,14 @@ fn solve(op_count: i32, data: &Vec<(i64, Vec<i64>)>) -> i64 {
             });
 
 
-        if valid { sum + *target } else { sum }
+        if valid { sum + target } else { sum }
     })
 }
 
-pub fn part_one(data: Vec<(i64, Vec<i64>)>) -> i64 {
+pub fn part_one(data: &Vec<(i64, Vec<i64>)>) -> i64 {
     solve(2, &data)
 }
 
-pub fn part_two(data: Vec<(i64, Vec<i64>)>) -> i64 {
+pub fn part_two(data: &Vec<(i64, Vec<i64>)>) -> i64 {
     solve(3, &data)
 }
